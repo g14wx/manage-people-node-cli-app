@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  chernandez-cli-app:
+    container_name: tech_test_chernandez_cli_prod
+    image: test_tech_chernandez_cli
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: prod
+    stdin_open: true
+    tty: true
+
+volumes:
+  tech_test_chernandez_data : {}
