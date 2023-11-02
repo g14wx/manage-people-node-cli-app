@@ -48,8 +48,15 @@ while (questions.WantToContinueInApp) {
                         sortByTitle = "(List only active ones)";
                         sortedPeople = people.listOnlyActiveOnes();
                     }
-                    _simpleTitle(`List People ${sortByTitle}`);
-                    table.drawTable(["Name", "Favorite Food", "Favorite movie", "Status", "Created at", "Updated at"], sortedPeople);
+
+                    if (sortedPeople.length === 0){
+                        if (questions.SelectedListPeopleMenuIndex === MenuIndexListPeople.ListOnlyActive){
+                            _simpleTitle("There is no active users by the moment! 😔");
+                        }
+                    } else {
+                        _simpleTitle(`List People ${sortByTitle}`);
+                        table.drawTable(["Name", "Favorite Food", "Favorite movie", "Status", "Created at", "Updated at"], sortedPeople);
+                    }
 
                     await questions.askGoFromListPeopleSubMenu();
                 }
