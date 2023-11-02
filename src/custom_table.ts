@@ -10,27 +10,16 @@ export class CustomTable implements  ICustomTable {
     ) {
     }
 
-    drawTable() {
-        // Create a new table instance
+    drawTable(headers: string[], data: string[][]) {
+
         const table = new Table({
-            head: ['Name', 'Age', 'Country'],
-            colWidths: [15, 10, 15], // Set the column widths
+            head: headers
         });
 
-// Sample data
-        const data = [
-            ['John', 30, 'USA'],
-            ['Alice', 25, 'Canada'],
-            ['Bob', 35, 'UK'],
-        ];
-
-// Add data to the table
         data.forEach((row) => {
             table.push(row);
         });
 
-// Print the table
         console.log(table.toString());
-
     }
 }

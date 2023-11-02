@@ -21,17 +21,20 @@
     "@types/figlet": "^1.5.7",
     "@types/gradient-string": "^1.1.4",
     "@types/inquirer": "^9.0.6",
+    "@types/luxon": "^3.3.3",
     "@types/node": "^20.8.10",
     "tsc-watch": "^6.0.4",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "@faker-js/faker": "^8.2.0",
     "chalk": "^5.3.0",
     "chalk-animation": "^2.0.3",
     "cli-table3": "^0.6.3",
     "figlet": "^1.7.0",
     "gradient-string": "^2.0.2",
     "inquirer": "^9.2.11",
+    "luxon": "^3.4.3",
     "nanospinner": "^1.1.0"
   }
 }
