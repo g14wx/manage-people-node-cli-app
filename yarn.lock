@@ -29,6 +29,11 @@
   resolved "https://registry.yarnpkg.com/@colors/colors/-/colors-1.5.0.tgz#bb504579c1cae923e6576a4f5da43d25f97bdbd9"
   integrity sha512-ooWCrlZP11i8GImSjTHYHLkvFDP48nS4+204nGb1RiX/WXYHmJA2III9/e2DWVabCESdW7hBAEzHRqUn9OUVvQ==
 
+"@faker-js/faker@^8.2.0":
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-8.2.0.tgz#d4656d2cb485fe6ec4e7b340da9f16fac2c36c4a"
+  integrity sha512-VacmzZqVxdWdf9y64lDOMZNDMM/FQdtM9IsaOPKOm2suYwEatb8VkdHqOzXcDnZbk7YDE2BmsJmy/2Hmkn563g==
+
 "@ljharb/through@^2.3.9":
   version "2.3.11"
   resolved "https://registry.yarnpkg.com/@ljharb/through/-/through-2.3.11.tgz#783600ff12c06f21a76cc26e33abd0b1595092f9"
@@ -60,6 +65,11 @@
   dependencies:
     "@types/through" "*"
     rxjs "^7.2.0"
+
+"@types/luxon@^3.3.3":
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/@types/luxon/-/luxon-3.3.3.tgz#b2e20a9536f91ab3e6e7895c91883e1a7ad49a6e"
+  integrity sha512-/BJF3NT0pRMuxrenr42emRUF67sXwcZCd+S1ksG/Fcf9O7C3kKCY4uJSbKBE4KDUIYr3WMsvfmWD8hRjXExBJQ==
 
 "@types/minimist@^1.2.2":
   version "1.2.4"
@@ -583,6 +593,11 @@ lru-cache@^6.0.0:
   integrity sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==
   dependencies:
     yallist "^4.0.0"
+
+luxon@^3.4.3:
+  version "3.4.3"
+  resolved "https://registry.yarnpkg.com/luxon/-/luxon-3.4.3.tgz#8ddf0358a9492267ffec6a13675fbaab5551315d"
+  integrity sha512-tFWBiv3h7z+T/tDaoxA8rqTxy1CHV6gHS//QdaH4pulbq/JuBSGgQspQQqcgnwdAx6pNI7cmvz5Sv/addzHmUg==
 
 map-obj@^1.0.0:
   version "1.0.1"
