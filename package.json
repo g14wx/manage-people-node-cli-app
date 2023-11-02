@@ -14,7 +14,8 @@
     "docker:dev:run": "docker compose -f docker-compose.dev.yml up -d && docker attach tech_test_chernandez_cli_dev",
     "docker:dev:up": "docker compose -f docker-compose.dev.yml up -d",
     "docker:dev:down": "docker compose -f docker-compose.dev.yml down --remove-orphans",
-    "docker:dev:clean": "docker compose -f docker-compose.dev.yml down --volumes --remove-orphans --rmi local"
+    "docker:dev:clean": "docker compose -f docker-compose.dev.yml down --volumes --remove-orphans --rmi local",
+    "start": "yarn build && node ./dist/index.js"
   },
   "devDependencies": {
     "@types/chalk-animation": "^1.6.2",

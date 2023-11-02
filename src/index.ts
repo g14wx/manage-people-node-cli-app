@@ -68,7 +68,6 @@ while (questions.WantToContinueInApp) {
                 // fist list all the persons
                 const listOfPeople = people.getPeople();
                 const index: number = await questions.questionSelectPerson(listOfPeople);
-                console.log("index to update the user:  ", index);
                 const results: IPersonAnswers = await questions.questionsToUpdateAUser();
                 // Create new person
                 people.updatePerson(index, results);
